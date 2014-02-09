@@ -11,6 +11,7 @@
 @implementation GravatarUrlBuilder
 
 + (NSURL *)getGravatarUrl:(NSString *)email {
+    /*
     //  Copied from: https://github.com/ernstsson/GravatarIDObjC/blob/master/Impl/GravatarUIImageFactory.m
     email = [[email stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] lowercaseString];
     
@@ -31,6 +32,8 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.gravatar.com/avatar/%@.jpg?d=404&s=%d", hexValue, squareSideLength]];
     
     return url;
+     */
+    return nil;
 }
 
 @end

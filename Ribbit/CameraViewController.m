@@ -33,18 +33,9 @@ UIColor *disclosureColor;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
-
-    PFQuery *query = [self.friendsRelation query];
-    [query orderByAscending:@"username"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@ %@", error, error.userInfo);
-        } else {
-            self.friends = objects;
-            [self.tableView reloadData];
-        }
-    }];
+    
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    self.friends = [delegate myFriends];
     
     if (self.image == nil && self.videoFilePath.length == 0) {
         self.imagePicker = [[UIImagePickerController alloc] init];
@@ -84,8 +75,8 @@ UIColor *disclosureColor;
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    PFUser *user = [self.friends objectAtIndex:indexPath.row];
-    cell.textLabel.text = user.username;
+    SCUser *user = [SCUser initWithDictionary: [self.friends objectAtIndex:indexPath.row]];
+    cell.textLabel.text = [user displayName];
     
     if ([self.recipients containsObject:user.objectId]) {
         cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
@@ -100,11 +91,11 @@ UIColor *disclosureColor;
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    PFUser *user = [self.friends objectAtIndex:indexPath.row];
+    SCUser *user = [SCUser initWithDictionary: [self.friends objectAtIndex:indexPath.row]];
     
     if (cell.accessoryView == nil) {
         cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
-        [self.recipients addObject:user.objectId];
+        [self.recipients addObject:user.username];
         
     } else {
         cell.accessoryView = nil;
@@ -188,32 +179,19 @@ UIColor *disclosureColor;
         fileType = @"movie";
     }
     
-    PFFile *file = [PFFile fileWithName:fileName data:fileData];
-    [file saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (error) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error occured!"
-                                                            message:@"Please try sending your message again!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [alert show];
-        } else {
-            PFObject *message = [PFObject objectWithClassName:@"Messages"];
-            [message setObject:file forKey:@"file"];
-            [message setObject:fileType forKey:@"fileType"];
-            [message setObject:self.recipients forKey:@"recipientsIds"];
-            [message setObject:[[PFUser currentUser] objectId] forKey:@"senderId"];
-            [message setObject:[[PFUser currentUser] username] forKey:@"senderName"];
-            [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    __block CameraViewController *me = self;
+            void (^block)(BOOL, NSError*) = ^(BOOL success, NSError *error) {
                 if (error) {
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error occured!"
-                                                                    message:@"Please try sending your message again!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                                                                    message:@"Please try sending your message again!" delegate:me cancelButtonTitle:@"OK" otherButtonTitles: nil];
                     [alert show];
                 } else {
                     // Everything went better than expected
-                    [self reset];
-
+                    [me reset];
                 }
-            }];
-        }
-    }];
+            };
+    
+    [SnapchatClient sendSnap: fileData withType: fileType withRecipients: self.recipients fromUser: [SnapchatClient currentUser] withBlock: block];
 }
 
 - (void)reset {

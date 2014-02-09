@@ -14,3 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#include "SnapchatClient.h"
+#include "AppDelegate.h"
+#define Delegate ((AppDelegate *)[UIApplication sharedApplication].delegate) 

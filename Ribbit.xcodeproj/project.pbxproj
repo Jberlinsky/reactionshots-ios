@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395A274E6E2B4ED6BA5DAAF7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21729731ACC4291BDD71B89 /* libPods.a */; };
 		421B46091826C8D50082B789 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B46081826C8D50082B789 /* Foundation.framework */; };
 		421B460B1826C8D50082B789 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B460A1826C8D50082B789 /* CoreGraphics.framework */; };
 		421B460D1826C8D50082B789 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B460C1826C8D50082B789 /* UIKit.framework */; };
@@ -39,10 +40,21 @@
 		428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0E18282269003D19F0 /* CameraViewController.m */; };
 		428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F1118284D57003D19F0 /* ImageViewController.m */; };
 		42C8D5751827C28D002B732B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5741827C28D002B732B /* LoginViewController.m */; };
-		42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5771827C29D002B732B /* SingUpViewController.m */; };
 		42E1254C1828571A00319FD0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E1254B1828571A00319FD0 /* MediaPlayer.framework */; };
 		42E1254F182933C200319FD0 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E1254E182933C200319FD0 /* TPKeyboardAvoidingScrollView.m */; };
 		42E125521829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E125511829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		CB123BA118A62DC100F71F17 /* SnapchatClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA018A62DC100F71F17 /* SnapchatClient.m */; };
+		CB123BA418A636B300F71F17 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA318A636B300F71F17 /* SCUser.m */; };
+		CB123BA718A636F600F71F17 /* SCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA618A636F600F71F17 /* SCMessage.m */; };
+		CB123BAA18A6422800F71F17 /* SCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA918A6422800F71F17 /* SCFile.m */; };
+		CB97091C18A60D6600BC4A8B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB97091B18A60D6600BC4A8B /* Parse.framework */; };
+		CBFA9FC718A6C7990095C7DB /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA9FC618A6C7990095C7DB /* DejalActivityView.m */; };
+		CBFA9FC918A79ED70095C7DB /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA9FC818A79ED70095C7DB /* Instabug.framework */; };
+		CBFA9FCB18A79F940095C7DB /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBFA9FCA18A79F940095C7DB /* Instabug.bundle */; };
+		CBFA9FCD18A79FAC0095C7DB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA9FCC18A79FAC0095C7DB /* CoreTelephony.framework */; };
+		CBFA9FD318A7A18B0095C7DB /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA9FCF18A7A18B0095C7DB /* HockeySDK.framework */; };
+		CBFA9FD418A7A18B0095C7DB /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CBFA9FD118A7A18B0095C7DB /* HockeySDK.xcconfig */; };
+		CBFA9FD518A7A18B0095C7DB /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBFA9FD218A7A18B0095C7DB /* HockeySDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0934A454572E42BF8D50500E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		421B46051826C8D50082B789 /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421B46081826C8D50082B789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		421B460A1826C8D50082B789 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,13 +114,29 @@
 		428B9F1118284D57003D19F0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		42C8D5731827C28D002B732B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		42C8D5741827C28D002B732B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		42C8D5761827C29D002B732B /* SingUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingUpViewController.h; sourceTree = "<group>"; };
-		42C8D5771827C29D002B732B /* SingUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingUpViewController.m; sourceTree = "<group>"; };
 		42E1254B1828571A00319FD0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		42E1254D182933C200319FD0 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		42E1254E182933C200319FD0 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		42E125501829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		42E125511829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		CB123B9F18A62DC100F71F17 /* SnapchatClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapchatClient.h; sourceTree = "<group>"; };
+		CB123BA018A62DC100F71F17 /* SnapchatClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapchatClient.m; sourceTree = "<group>"; };
+		CB123BA218A636B300F71F17 /* SCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUser.h; path = Ribbit/SCUser.h; sourceTree = "<group>"; };
+		CB123BA318A636B300F71F17 /* SCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUser.m; path = Ribbit/SCUser.m; sourceTree = "<group>"; };
+		CB123BA518A636F600F71F17 /* SCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMessage.h; path = Ribbit/SCMessage.h; sourceTree = "<group>"; };
+		CB123BA618A636F600F71F17 /* SCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMessage.m; path = Ribbit/SCMessage.m; sourceTree = "<group>"; };
+		CB123BA818A6422800F71F17 /* SCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFile.h; path = Ribbit/SCFile.h; sourceTree = "<group>"; };
+		CB123BA918A6422800F71F17 /* SCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFile.m; path = Ribbit/SCFile.m; sourceTree = "<group>"; };
+		CB97091B18A60D6600BC4A8B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CBFA9FC518A6C7990095C7DB /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		CBFA9FC618A6C7990095C7DB /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		CBFA9FC818A79ED70095C7DB /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		CBFA9FCA18A79F940095C7DB /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
+		CBFA9FCC18A79FAC0095C7DB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CBFA9FCF18A7A18B0095C7DB /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		CBFA9FD118A7A18B0095C7DB /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		CBFA9FD218A7A18B0095C7DB /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		D21729731ACC4291BDD71B89 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,20 +144,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFA9FCD18A79FAC0095C7DB /* CoreTelephony.framework in Frameworks */,
 				42E1254C1828571A00319FD0 /* MediaPlayer.framework in Frameworks */,
 				421B4648182708C00082B789 /* CFNetwork.framework in Frameworks */,
 				421B4649182708C00082B789 /* CoreLocation.framework in Frameworks */,
 				421B464A182708C00082B789 /* libz.1.1.3.dylib in Frameworks */,
+				CB97091C18A60D6600BC4A8B /* Parse.framework in Frameworks */,
 				421B464B182708C00082B789 /* MobileCoreServices.framework in Frameworks */,
 				421B464C182708C00082B789 /* QuartzCore.framework in Frameworks */,
 				421B464D182708C00082B789 /* Security.framework in Frameworks */,
+				CBFA9FC918A79ED70095C7DB /* Instabug.framework in Frameworks */,
 				421B465318270AC90082B789 /* Parse.framework in Frameworks */,
+				CBFA9FD318A7A18B0095C7DB /* HockeySDK.framework in Frameworks */,
 				421B464E182708C00082B789 /* StoreKit.framework in Frameworks */,
 				421B464F182708C00082B789 /* SystemConfiguration.framework in Frameworks */,
 				421B460B1826C8D50082B789 /* CoreGraphics.framework in Frameworks */,
 				421B463F1827084A0082B789 /* AudioToolbox.framework in Frameworks */,
 				421B460D1826C8D50082B789 /* UIKit.framework in Frameworks */,
 				421B46091826C8D50082B789 /* Foundation.framework in Frameworks */,
+				395A274E6E2B4ED6BA5DAAF7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,10 +182,20 @@
 		421B45FC1826C8D50082B789 = {
 			isa = PBXGroup;
 			children = (
+				CBFA9FCE18A7A18B0095C7DB /* HockeySDK.embeddedframework */,
+				CB123BA818A6422800F71F17 /* SCFile.h */,
+				CB123BA918A6422800F71F17 /* SCFile.m */,
+				CB123BA518A636F600F71F17 /* SCMessage.h */,
+				CB123BA618A636F600F71F17 /* SCMessage.m */,
+				CB123BA218A636B300F71F17 /* SCUser.h */,
+				CB123BA318A636B300F71F17 /* SCUser.m */,
 				421B460E1826C8D50082B789 /* Ribbit */,
 				421B46271826C8D50082B789 /* RibbitTests */,
 				421B46071826C8D50082B789 /* Frameworks */,
 				421B46061826C8D50082B789 /* Products */,
+				0934A454572E42BF8D50500E /* Pods.xcconfig */,
+				CBFA9FCA18A79F940095C7DB /* Instabug.bundle */,
+				CBFA9FC818A79ED70095C7DB /* Instabug.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +211,8 @@
 		421B46071826C8D50082B789 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBFA9FCC18A79FAC0095C7DB /* CoreTelephony.framework */,
+				CB97091B18A60D6600BC4A8B /* Parse.framework */,
 				42E1254B1828571A00319FD0 /* MediaPlayer.framework */,
 				421B465218270AC90082B789 /* Parse.framework */,
 				421B4640182708C00082B789 /* CFNetwork.framework */,
@@ -182,6 +228,7 @@
 				421B460A1826C8D50082B789 /* CoreGraphics.framework */,
 				421B460C1826C8D50082B789 /* UIKit.framework */,
 				421B46211826C8D50082B789 /* XCTest.framework */,
+				D21729731ACC4291BDD71B89 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,8 +247,6 @@
 				428B9F081827E416003D19F0 /* EditFriendsViewController.m */,
 				428B9F0D18282269003D19F0 /* CameraViewController.h */,
 				428B9F0E18282269003D19F0 /* CameraViewController.m */,
-				42C8D5761827C29D002B732B /* SingUpViewController.h */,
-				42C8D5771827C29D002B732B /* SingUpViewController.m */,
 				42C8D5731827C28D002B732B /* LoginViewController.h */,
 				42C8D5741827C28D002B732B /* LoginViewController.m */,
 				421B46391826FD750082B789 /* InboxViewController.h */,
@@ -215,6 +260,10 @@
 				42497B42182A9C1000A33513 /* MSCellAccessory */,
 				421B461A1826C8D50082B789 /* Images.xcassets */,
 				421B460F1826C8D50082B789 /* Supporting Files */,
+				CB123B9F18A62DC100F71F17 /* SnapchatClient.h */,
+				CB123BA018A62DC100F71F17 /* SnapchatClient.m */,
+				CBFA9FC518A6C7990095C7DB /* DejalActivityView.h */,
+				CBFA9FC618A6C7990095C7DB /* DejalActivityView.m */,
 			);
 			path = Ribbit;
 			sourceTree = "<group>";
@@ -259,6 +308,25 @@
 			path = MSCellAccessory;
 			sourceTree = "<group>";
 		};
+		CBFA9FCE18A7A18B0095C7DB /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				CBFA9FCF18A7A18B0095C7DB /* HockeySDK.framework */,
+				CBFA9FD018A7A18B0095C7DB /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		CBFA9FD018A7A18B0095C7DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBFA9FD118A7A18B0095C7DB /* HockeySDK.xcconfig */,
+				CBFA9FD218A7A18B0095C7DB /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421B46311826C8D50082B789 /* Build configuration list for PBXNativeTarget "Ribbit" */;
 			buildPhases = (
+				EE50BF9C51774A468ACDBDA5 /* Check Pods Manifest.lock */,
 				421B46011826C8D50082B789 /* Sources */,
 				421B46021826C8D50082B789 /* Frameworks */,
 				421B46031826C8D50082B789 /* Resources */,
+				4C39CAD8A8934F0EBFD1EC1C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +376,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tord Åsnes";
 				TargetAttributes = {
+					421B46041826C8D50082B789 = {
+						DevelopmentTeam = 2KM72DHL3F;
+					};
 					421B461F1826C8D50082B789 = {
 						TestTargetID = 421B46041826C8D50082B789;
 					};
@@ -334,9 +407,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFA9FCB18A79F940095C7DB /* Instabug.bundle in Resources */,
+				CBFA9FD418A7A18B0095C7DB /* HockeySDK.xcconfig in Resources */,
 				421B46381826C9070082B789 /* MainStoryboard.storyboard in Resources */,
 				421B46131826C8D50082B789 /* InfoPlist.strings in Resources */,
 				421B461B1826C8D50082B789 /* Images.xcassets in Resources */,
+				CBFA9FD518A7A18B0095C7DB /* HockeySDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,22 +426,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C39CAD8A8934F0EBFD1EC1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE50BF9C51774A468ACDBDA5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		421B46011826C8D50082B789 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFA9FC718A6C7990095C7DB /* DejalActivityView.m in Sources */,
 				42C8D5751827C28D002B732B /* LoginViewController.m in Sources */,
 				42497B4B182AA62F00A33513 /* GravatarUrlBuilder.m in Sources */,
 				42E1254F182933C200319FD0 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				42497B48182A9C1000A33513 /* UIView+AccessViewController.m in Sources */,
 				428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */,
+				CB123BA718A636F600F71F17 /* SCMessage.m in Sources */,
+				CB123BA118A62DC100F71F17 /* SnapchatClient.m in Sources */,
 				421B46191826C8D50082B789 /* AppDelegate.m in Sources */,
 				42497B47182A9C1000A33513 /* MSCellAccessory.m in Sources */,
+				CB123BA418A636B300F71F17 /* SCUser.m in Sources */,
+				CB123BAA18A6422800F71F17 /* SCFile.m in Sources */,
 				428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */,
 				42E125521829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
-				42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */,
 				428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */,
 				428B9F091827E416003D19F0 /* EditFriendsViewController.m in Sources */,
 				421B463B1826FD750082B789 /* InboxViewController.m in Sources */,
@@ -484,34 +597,66 @@
 		};
 		421B46321826C8D50082B789 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0934A454572E42BF8D50500E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tordasnes/Development/Ribbit,
+					"/Users/jberlinsky/workspace/Snapchat-clone/**",
+					"/Users/jberlinsky/workspace/Snapchat-clone",
+					"/Users/jberlinsky/Downloads/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33CFD97F-FAF3-4BD5-80C9-B42E6F8663D7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		421B46331826C8D50082B789 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0934A454572E42BF8D50500E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/tordasnes/Development/Ribbit,
+					"/Users/jberlinsky/workspace/Snapchat-clone/**",
+					"/Users/jberlinsky/workspace/Snapchat-clone",
+					"/Users/jberlinsky/Downloads/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33CFD97F-FAF3-4BD5-80C9-B42E6F8663D7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

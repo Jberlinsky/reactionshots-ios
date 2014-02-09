@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
 
 @interface CameraViewController : UITableViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -16,8 +15,9 @@
 @property (nonatomic, strong) NSString *videoFilePath;
 
 @property (nonatomic, strong) NSArray *friends;
-@property (nonatomic, strong) PFRelation *friendsRelation;
 @property (nonatomic, strong) NSMutableArray *recipients;
+
+@property (nonatomic, retain) SCFile *file;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)send:(id)sender;

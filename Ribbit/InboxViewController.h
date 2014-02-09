@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
+#import "SnapchatClient.h"
 #import <MediaPlayer/MediaPlayer.h>
 @interface InboxViewController : UITableViewController
 

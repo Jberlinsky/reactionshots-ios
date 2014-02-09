@@ -22,17 +22,13 @@
     
     self.moviePlayer = [[MPMoviePlayerController alloc] init];
     
-    PFUser *currentUser = [PFUser currentUser];
-    
-    if (currentUser) {
-        NSLog(@"Current user: %@", [currentUser username]);
-    } else {
+    if (![SnapchatClient currentUser]) {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
     
     self.refreshControl = [[UIRefreshControl alloc] init];
-    
     [self.refreshControl addTarget:self action:@selector(retriveMessages) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
     
 }
 
@@ -45,7 +41,10 @@
     
     [self.navigationController.navigationBar setHidden:NO];
     
-    [self retriveMessages];
+    if (self.messages.count <= 0) {
+        [self retriveMessages];
+    }
+    
 }
 
 
@@ -68,7 +67,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    PFObject *message = [self.messages objectAtIndex:indexPath.row];
+    SCMessage *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
     
     UIColor *color = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
@@ -93,34 +92,17 @@
     if ([fileType isEqualToString:@"image"]) {
         [self performSegueWithIdentifier:@"showImage" sender:self];
     } else {
-        PFFile *videoFile = [self.selectedMessage objectForKey:@"file"];
-        NSURL *fileUrl = [NSURL URLWithString:videoFile.url];
+        NSURL *fileUrl = [SnapchatClient fileURLFromMessage: self.selectedMessage];
+    
         self.moviePlayer.contentURL = fileUrl;
         [self.moviePlayer prepareToPlay];
+        
         
         // Add it to the viewController
         [self.view addSubview:self.moviePlayer.view];
         [self.moviePlayer setFullscreen:YES animated:YES];
     }
 
-    NSMutableArray *recipientsIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientsIds"]];
-    NSLog(@"Recipients: %@", recipientsIds);
-    
-    if (recipientsIds.count == 1) {
-        [self.selectedMessage deleteInBackground];
-    } else {
-        [recipientsIds removeObject:[[PFUser currentUser] objectId]];
-        [self.selectedMessage setObject:recipientsIds forKey:@"recipientsIds"];
-        [self.selectedMessage saveInBackground];
-    }
-
-}
-
-
-- (IBAction)logOut:(id)sender {
-    
-    [PFUser logOut];
-    [self performSegueWithIdentifier:@"showLogin" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -139,24 +121,21 @@
 
 - (void)retriveMessages
 {
-    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
-    [query whereKey:@"recipientsIds" equalTo:[[PFUser currentUser] objectId]];
-    [query orderByDescending:@"createdAt"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    __block InboxViewController *me = self;
+    void (^block)(NSArray*, NSError*) = ^(NSArray *objects, NSError *error) {
         if (error) {
             NSLog(@"Error: %@ %@", error, error.userInfo);
         } else {
             // Found messages!
-            self.messages = objects;
-            [self.tableView reloadData];
-            NSLog(@"Retrived %d messages", self.messages.count);
+            me.messages = objects;
+            NSLog(@"Retrived %d messages", me.messages
+                  .count);
+            Delegate.myMessages = me.messages;
         }
-        
-        if ([self.refreshControl isRefreshing]) {
-            [self.refreshControl endRefreshing];
-        }
-        
-    }];
+        [[me tableView] reloadData];
+        [self.refreshControl endRefreshing];
+    };
+    [SnapchatClient getMessagesForUser: [SnapchatClient currentUser] withBlock: block];
 }
 
 

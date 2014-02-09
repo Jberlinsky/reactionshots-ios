@@ -21,7 +21,7 @@ UIColor *disclosureColor;
 {
     [super viewDidLoad];
     
-    self.currentUser = [PFUser currentUser];
+    self.currentUser = [SnapchatClient currentUser];
 
     disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
     
@@ -29,18 +29,8 @@ UIColor *disclosureColor;
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-
-    PFQuery *query = [PFUser query];
-    [query orderByAscending:@"username"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if(error){
-            NSLog(@"Error: %@ %@", error, error.userInfo);
-        } else {
-            self.allUsers = objects;
-            [self.tableView reloadData];
-        }
-    }];
+    self.allUsers = [Delegate myFriends];
+    self.friends = self.allUsers;
 }
 
 
@@ -63,9 +53,9 @@ UIColor *disclosureColor;
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
+    SCUser *user = [SCUser initWithDictionary: [self.allUsers objectAtIndex:indexPath.row]];
     
-    cell.textLabel.text = user.username;
+    cell.textLabel.text = [user displayName];
     
     if ([self isFriend:user]) {
         cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
@@ -77,47 +67,11 @@ UIColor *disclosureColor;
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
-    PFRelation *friendsRelation = [self.currentUser relationforKey:@"friendsRelation"];
-    
-    if ([self isFriend:user]) {
-        // Remove friend
-        
-        for (PFUser *friend in self.friends) {
-            cell.accessoryView = nil;
-
-            if ([friend.objectId isEqualToString:user.objectId]) {
-                [self.friends removeObject:friend];
-                break;
-            }
-        }
-        [friendsRelation removeObject:user];
-    } else {
-        cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
-        [self.friends addObject:user];
-        [friendsRelation addObject:user];
-    }
-    
-    [self.currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@ %@", error, error.userInfo);
-        }
-    }];
-    
-    
-}
-
 #pragma mark - Helper methods
 
 - (BOOL)isFriend:(PFUser *)user
 {
-    for (PFUser *friend in self.friends) {
+    for (SCUser *friend in self.friends) {
         if ([friend.objectId isEqualToString:user.objectId]) {
             return YES;
         }

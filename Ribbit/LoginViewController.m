@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import <Parse/Parse.h>
 
 @interface LoginViewController ()
 
@@ -24,6 +23,11 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
+    if ([SnapchatClient storedUsername] && [SnapchatClient storedPassword]) {
+        self.usernameField.text = [SnapchatClient storedUsername];
+        self.passwordField.text = [SnapchatClient storedPassword];
+        [self logIn:nil];
+    }
 }
 
 - (IBAction)logIn:(id)sender {
@@ -41,7 +45,9 @@
                                                   otherButtonTitles:nil];
         [alertView show];
     } else {
-        [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
+        __block LoginViewController *me = self;
+        // TODO remove coupling with PFUser (prefer SCUser)
+        void (^block)(PFUser*, NSError*) = ^(PFUser *user, NSError *error) {
             if (error) {
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry!"
                                                                     message:[error.userInfo objectForKey:@"error"]
@@ -49,9 +55,12 @@
                                                           otherButtonTitles:nil];
                 [alertView show];
             } else {
-                [self.navigationController popToRootViewControllerAnimated:YES];
+                [Delegate initiateDownload];
+                [me.navigationController popToRootViewControllerAnimated:YES];
             }
-        }];
+        };
+        
+        [SnapchatClient logInWithUsername:username password:password block:block];
     }
 }
 

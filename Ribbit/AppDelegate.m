@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 Tord Åsnes. All rights reserved.
 //
 
+#import <HockeySDK/HockeySDK.h>
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+#include "InboxViewController.h"
+#include <Instabug/Instabug.h>
 
 @implementation AppDelegate
 
@@ -16,12 +18,34 @@
     
     [NSThread sleepForTimeInterval:1.2];
     
-    [Parse setApplicationId:@"hhQ7Zp9BbkFLhTiRop1JApYOrelvDsZbFklWIGaQ"
-                  clientKey:@"iPSqpMe2JFR0P7uO8Iy9Q0Oqz6987Zmvb7elEXAl"];
+    [SnapchatClient initialize];
+    
+    [Instabug KickOffWithToken:@"9a0578ef8484b904e4c600f748acb03b" CaptureSource:InstabugCaptureSourceUIKit FeedbackEvent:InstabugFeedbackEventShake IsTrackingLocation:YES];
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"7c85f2c3219086e1acbb2253b10533b6"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
     [self customizeUserInterface];
     
     return YES;
+}
+
+- (void) initiateDownload
+{
+    [self loadFriends];
+}
+
+- (void)loadFriends
+{
+    __block AppDelegate *me = self;
+    void (^block)(NSArray*, NSError*) = ^(NSArray *objects, NSError *error) {
+        if(error){
+            NSLog(@"Error: %@ %@", error, error.userInfo);
+        } else {
+            me.myFriends = objects;
+        }
+    };
+    [SnapchatClient getMyFriendsWithBlock:block];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -60,7 +84,6 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
-    
 }
 
 

@@ -11,5 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSArray *myFriends;
+@property (strong, nonatomic) NSArray *myMessages;
+
+- (void)initiateDownload;
 
 @end
