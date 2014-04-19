@@ -1,0 +1,405 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "Instabug.bundle", 
+            "target": "Instabug.bundle"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDK.xcconfig", 
+            "target": "HockeySDK.xcconfig"
+        }, 
+        {
+            "asset": "MainStoryboard.storyboard", 
+            "target": null
+        }, 
+        {
+            "asset": "Ribbit/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle", 
+            "target": "HockeySDKResources.bundle"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "Ribbit", 
+        "APPLICATION_IDENTIFIER": "com.jasonberlinsky.shotzapp", 
+        "APPLICATION_NAME": "Ribbit", 
+        "LONG_VERSION": "1.1", 
+        "SHORT_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "Ribbit", 
+            "PRODUCT_NAME": "Ribbit"
+        }
+    }, 
+    "defines": {
+        "COCOAPODS": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreGraphics", 
+        "MobileCoreServices", 
+        "Security", 
+        "SystemConfiguration", 
+        "CoreTelephony", 
+        "MediaPlayer", 
+        "CFNetwork", 
+        "CoreLocation", 
+        "Parse", 
+        "MobileCoreServices", 
+        "QuartzCore", 
+        "Security", 
+        "Instabug", 
+        "Parse", 
+        "HockeySDK", 
+        "StoreKit", 
+        "SystemConfiguration", 
+        "CoreGraphics", 
+        "AudioToolbox", 
+        "UIKit", 
+        "Foundation"
+    ], 
+    "flags": [
+        "\"-isystem/Users/jberlinsky/workspace/Snapchat-clone/Pods/Headers\"", 
+        "\"-isystem/Users/jberlinsky/workspace/Snapchat-clone/Pods/Headers/AFNetworking\"", 
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-function", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "Ribbit-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Ribbit-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Ribbit-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Ribbit-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "CameraViewController.h": {
+                    "key": "CameraViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "CameraViewController.h"
+                }, 
+                "DejalActivityView.h": {
+                    "key": "DejalActivityView.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "DejalActivityView.h"
+                }, 
+                "EditFriendsViewController.h": {
+                    "key": "EditFriendsViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "EditFriendsViewController.h"
+                }, 
+                "FriendsViewController.h": {
+                    "key": "FriendsViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "FriendsViewController.h"
+                }, 
+                "GravatarUrlBuilder.h": {
+                    "key": "GravatarUrlBuilder.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "GravatarUrlBuilder.h"
+                }, 
+                "ImageViewController.h": {
+                    "key": "ImageViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "ImageViewController.h"
+                }, 
+                "InboxViewController.h": {
+                    "key": "InboxViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "InboxViewController.h"
+                }, 
+                "LoginViewController.h": {
+                    "key": "LoginViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "LoginViewController.h"
+                }, 
+                "MSCellAccessory.h": {
+                    "key": "MSCellAccessory.h", 
+                    "prefix": "Ribbit/MSCellAccessory/", 
+                    "suffix": "MSCellAccessory.h"
+                }, 
+                "RecordingUIViewController.h": {
+                    "key": "RecordingUIViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "RecordingUIViewController.h"
+                }, 
+                "Ribbit-Prefix.pch": {
+                    "key": "Ribbit-Prefix.pch", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "Ribbit-Prefix.pch"
+                }, 
+                "SCFile.h": {
+                    "key": "SCFile.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCFile.h"
+                }, 
+                "SCMessage.h": {
+                    "key": "SCMessage.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCMessage.h"
+                }, 
+                "SCUser.h": {
+                    "key": "SCUser.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCUser.h"
+                }, 
+                "SnapchatClient.h": {
+                    "key": "SnapchatClient.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SnapchatClient.h"
+                }, 
+                "TPKeyboardAvoidingScrollView.h": {
+                    "key": "TPKeyboardAvoidingScrollView.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "TPKeyboardAvoidingScrollView.h"
+                }, 
+                "UIScrollView+TPKeyboardAvoidingAdditions.h": {
+                    "key": "UIScrollView+TPKeyboardAvoidingAdditions.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "UIScrollView+TPKeyboardAvoidingAdditions.h"
+                }, 
+                "UIView+AccessViewController.h": {
+                    "key": "UIView+AccessViewController.h", 
+                    "prefix": "Ribbit/MSCellAccessory/", 
+                    "suffix": "UIView+AccessViewController.h"
+                }, 
+                "VideoViewController.h": {
+                    "key": "VideoViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "VideoViewController.h"
+                }, 
+                "VideoWriter.h": {
+                    "key": "VideoWriter.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "VideoWriter.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Pods/Headers", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Pods/Headers/AFNetworking", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./Ribbit/Ribbit-Info.plist"
+    ], 
+    "libs": [
+        "z.1.1.3", 
+        "Pods"
+    ], 
+    "modules": [], 
+    "pchs": [
+        "./Ribbit/Ribbit-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/CameraViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/DejalActivityView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/EditFriendsViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/FriendsViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/GravatarUrlBuilder.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/ImageViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/InboxViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/LoginViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/MSCellAccessory/MSCellAccessory.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/MSCellAccessory/UIView+AccessViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/RecordingUIViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCFile.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCMessage.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCUser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SnapchatClient.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/TPKeyboardAvoidingScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/UIScrollView+TPKeyboardAvoidingAdditions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/VideoViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/VideoWriter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/main.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "Ribbit.xcodeproj"
+}

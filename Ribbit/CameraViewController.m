@@ -27,6 +27,10 @@ UIColor *disclosureColor;
     self.recipients = [[NSMutableArray alloc] init];
     
     disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(retriveFriends) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
 
 }
 
@@ -212,6 +216,24 @@ UIColor *disclosureColor;
     return resizedImage;
 }
 
+- (void)retriveFriends
+{
+    __block CameraViewController *me = self;
+    void (^block)(NSArray*, NSError*) = ^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@ %@", error, error.userInfo);
+        } else {
+            // Found messages!
+            me.friends = objects;
+            NSLog(@"Retrived %d messages", me.friends
+                  .count);
+            Delegate.myFriends = me.friends;
+        }
+        [[me tableView] reloadData];
+        [self.refreshControl endRefreshing];
+    };
+    [SnapchatClient getMyFriendsWithBlock: block];
+}
 
 
 

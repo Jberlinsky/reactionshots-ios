@@ -41,7 +41,7 @@
     if ([username length] == 0 || [password length] == 0) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!"
                                                             message:@"Make sure you enter a username and password!"
-                                                           delegate:Nil cancelButtonTitle:@"Okey"
+                                                           delegate:Nil cancelButtonTitle:@"Okay"
                                                   otherButtonTitles:nil];
         [alertView show];
     } else {

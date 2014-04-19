@@ -1,0 +1,1011 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "Instabug.bundle/Info.plist", 
+            "target": "Instabug.bundle/Info.plist"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color1@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color1@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color1@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color1@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color1~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color1~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color1~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color1~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color2@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color2@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color2@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color2@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color2~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color2~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color2~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color2~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color3@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color3@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color3@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color3@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color3~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color3~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color3~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color3~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color4@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color4@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color4@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color4@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color4~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color4~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color4~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color4~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color5@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color5@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color5@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color5@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color5~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color5~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color5~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color5~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color6@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color6@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color6@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color6@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color6~ipad.png", 
+            "target": "Instabug.bundle/Instabug-color6~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-color6~iphone.png", 
+            "target": "Instabug.bundle/Instabug-color6~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-colorContainer@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-colorContainer@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-colorContainer@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-colorContainer@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-colorContainer~ipad.png", 
+            "target": "Instabug.bundle/Instabug-colorContainer~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-colorContainer~iphone.png", 
+            "target": "Instabug.bundle/Instabug-colorContainer~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-delete@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-delete@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-delete@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-delete@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-delete~ipad.png", 
+            "target": "Instabug.bundle/Instabug-delete~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-delete~iphone.png", 
+            "target": "Instabug.bundle/Instabug-delete~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-FloatingButton.png", 
+            "target": "Instabug.bundle/Instabug-FloatingButton.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-LogoColored@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-LogoColored@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-LogoColored@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-LogoColored@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-LogoColored~ipad.png", 
+            "target": "Instabug.bundle/Instabug-LogoColored~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-LogoColored~iphone.png", 
+            "target": "Instabug.bundle/Instabug-LogoColored~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-pen@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-pen@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-pen@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-pen@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-pen~ipad.png", 
+            "target": "Instabug.bundle/Instabug-pen~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-pen~iphone.png", 
+            "target": "Instabug.bundle/Instabug-pen~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected1@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected1@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected1@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected1@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected1~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected1~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected1~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected1~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected2@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected2@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected2@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected2@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected2~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected2~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected2~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected2~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected3@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected3@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected3@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected3@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected3~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected3~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected3~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected3~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected4@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected4@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected4@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected4@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected4~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected4~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected4~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected4~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected5@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected5@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected5@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected5@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected5~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected5~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected5~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected5~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected6@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected6@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected6@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected6@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected6~ipad.png", 
+            "target": "Instabug.bundle/Instabug-selected6~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-selected6~iphone.png", 
+            "target": "Instabug.bundle/Instabug-selected6~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-ShutterSound.aif", 
+            "target": "Instabug.bundle/Instabug-ShutterSound.aif"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-T@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-T@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-T@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-T@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-tick@2x~ipad.png", 
+            "target": "Instabug.bundle/Instabug-tick@2x~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-tick@2x~iphone.png", 
+            "target": "Instabug.bundle/Instabug-tick@2x~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-tick~ipad.png", 
+            "target": "Instabug.bundle/Instabug-tick~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-tick~iphone.png", 
+            "target": "Instabug.bundle/Instabug-tick~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-T~ipad.png", 
+            "target": "Instabug.bundle/Instabug-T~ipad.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/Instabug-T~iphone.png", 
+            "target": "Instabug.bundle/Instabug-T~iphone.png"
+        }, 
+        {
+            "asset": "Instabug.bundle/ar.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/ar.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/ar.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/ar.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/de.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/de.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/de.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/de.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/en.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/en.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/en.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/es.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/es.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/es.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/es.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/fr.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/fr.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/fr.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/fr.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-iPad.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-iPad.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-iPad.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-iPad.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-iPhone.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-iPhone.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-iPhone.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-iPhone.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPad.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPad.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPad.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPad.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPhone.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPhone.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPhone.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugFeedbackViewController-Landscape-iPhone.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-iPad.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-iPad.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-iPad.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-iPad.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-iPhone.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-iPhone.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-iPhone.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-iPhone.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPad.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPad.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPad.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPad.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPhone.nib/objects.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPhone.nib/objects.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPhone.nib/runtime.nib", 
+            "target": "Instabug.bundle/InstabugScreenshotViewController-Landscape-iPhone.nib/runtime.nib"
+        }, 
+        {
+            "asset": "Instabug.bundle/it.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/it.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/it.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/it.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/ja.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/ja.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/ja.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/ja.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/pt-BR.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/pt-BR.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/pt-BR.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/pt-BR.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/pt.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/pt.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/pt.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/pt.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/ru.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/ru.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/ru.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/ru.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/tr.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/tr.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/tr.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/tr.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/zh-Hans.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/zh-Hans.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/zh-Hans.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/zh-Hans.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/zh-Hant.lproj/InfoPlist.strings", 
+            "target": "Instabug.bundle/zh-Hant.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Instabug.bundle/zh-Hant.lproj/Localizable.strings", 
+            "target": "Instabug.bundle/zh-Hant.lproj/Localizable.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDK.xcconfig", 
+            "target": "HockeySDK.xcconfig"
+        }, 
+        {
+            "asset": "MainStoryboard.storyboard", 
+            "target": null
+        }, 
+        {
+            "asset": "Ribbit/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/authorize_denied.png", 
+            "target": "HockeySDKResources.bundle/authorize_denied.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/authorize_denied@2x.png", 
+            "target": "HockeySDKResources.bundle/authorize_denied@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/bg.png", 
+            "target": "HockeySDKResources.bundle/bg.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonHighlight.png", 
+            "target": "HockeySDKResources.bundle/buttonHighlight.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonHighlight@2x.png", 
+            "target": "HockeySDKResources.bundle/buttonHighlight@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedDelete.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedDelete.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedDelete@2x.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedDelete@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedDeleteHighlighted.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedDeleteHighlighted.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedDeleteHighlighted@2x.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedDeleteHighlighted@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedRegular.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedRegular.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedRegular@2x.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedRegular@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedRegularHighlighted.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedRegularHighlighted.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/buttonRoundedRegularHighlighted@2x.png", 
+            "target": "HockeySDKResources.bundle/buttonRoundedRegularHighlighted@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/feedbackActivity@2x~ipad.png", 
+            "target": "HockeySDKResources.bundle/feedbackActivity@2x~ipad.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/feedbackActivity~ipad.png", 
+            "target": "HockeySDKResources.bundle/feedbackActivity~ipad.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/feedbackActiviy.png", 
+            "target": "HockeySDKResources.bundle/feedbackActiviy.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/feedbackActiviy@2x.png", 
+            "target": "HockeySDKResources.bundle/feedbackActiviy@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/IconGradient.png", 
+            "target": "HockeySDKResources.bundle/IconGradient.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/IconGradient@2x.png", 
+            "target": "HockeySDKResources.bundle/IconGradient@2x.png"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/Info.plist", 
+            "target": "HockeySDKResources.bundle/Info.plist"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/de.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/de.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/en.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/en.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/es.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/es.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/fr.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/fr.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/hr.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/hr.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/hu.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/hu.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/it.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/it.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/ja.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/ja.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/nl.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/nl.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/pt-PT.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/pt-PT.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/pt.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/pt.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/ro.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/ro.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/ru.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/ru.lproj/HockeySDK.strings"
+        }, 
+        {
+            "asset": "../../Downloads/HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle/zh-Hans.lproj/HockeySDK.strings", 
+            "target": "HockeySDKResources.bundle/zh-Hans.lproj/HockeySDK.strings"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "Ribbit", 
+        "APPLICATION_IDENTIFIER": "com.jasonberlinsky.shotzapp", 
+        "APPLICATION_NAME": "Ribbit", 
+        "FEATURES": [
+            "opengles2", 
+            "portrait"
+        ], 
+        "ICU_CONFIG": "normal", 
+        "LONG_VERSION": "1.1", 
+        "SHORT_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "Ribbit", 
+            "PRODUCT_NAME": "Ribbit"
+        }
+    }, 
+    "defines": {
+        "COCOAPODS": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreGraphics", 
+        "MobileCoreServices", 
+        "Security", 
+        "SystemConfiguration", 
+        "CoreTelephony", 
+        "MediaPlayer", 
+        "CFNetwork", 
+        "CoreLocation", 
+        "Parse", 
+        "MobileCoreServices", 
+        "QuartzCore", 
+        "Security", 
+        "Instabug", 
+        "Parse", 
+        "HockeySDK", 
+        "StoreKit", 
+        "SystemConfiguration", 
+        "CoreGraphics", 
+        "AudioToolbox", 
+        "UIKit", 
+        "Foundation"
+    ], 
+    "flags": [
+        "\"-isystem/Users/jberlinsky/workspace/Snapchat-clone/Pods/Headers\"", 
+        "\"-isystem/Users/jberlinsky/workspace/Snapchat-clone/Pods/Headers/AFNetworking\"", 
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-function", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "Ribbit-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Ribbit-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Ribbit-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Ribbit-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "CameraViewController.h": {
+                    "key": "CameraViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "CameraViewController.h"
+                }, 
+                "DejalActivityView.h": {
+                    "key": "DejalActivityView.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "DejalActivityView.h"
+                }, 
+                "EditFriendsViewController.h": {
+                    "key": "EditFriendsViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "EditFriendsViewController.h"
+                }, 
+                "FriendsViewController.h": {
+                    "key": "FriendsViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "FriendsViewController.h"
+                }, 
+                "GravatarUrlBuilder.h": {
+                    "key": "GravatarUrlBuilder.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "GravatarUrlBuilder.h"
+                }, 
+                "ImageViewController.h": {
+                    "key": "ImageViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "ImageViewController.h"
+                }, 
+                "InboxViewController.h": {
+                    "key": "InboxViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "InboxViewController.h"
+                }, 
+                "LoginViewController.h": {
+                    "key": "LoginViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "LoginViewController.h"
+                }, 
+                "MSCellAccessory.h": {
+                    "key": "MSCellAccessory.h", 
+                    "prefix": "Ribbit/MSCellAccessory/", 
+                    "suffix": "MSCellAccessory.h"
+                }, 
+                "RecordingUIViewController.h": {
+                    "key": "RecordingUIViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "RecordingUIViewController.h"
+                }, 
+                "Ribbit-Prefix.pch": {
+                    "key": "Ribbit-Prefix.pch", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "Ribbit-Prefix.pch"
+                }, 
+                "SCFile.h": {
+                    "key": "SCFile.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCFile.h"
+                }, 
+                "SCMessage.h": {
+                    "key": "SCMessage.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCMessage.h"
+                }, 
+                "SCUser.h": {
+                    "key": "SCUser.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SCUser.h"
+                }, 
+                "SnapchatClient.h": {
+                    "key": "SnapchatClient.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "SnapchatClient.h"
+                }, 
+                "TPKeyboardAvoidingScrollView.h": {
+                    "key": "TPKeyboardAvoidingScrollView.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "TPKeyboardAvoidingScrollView.h"
+                }, 
+                "UIScrollView+TPKeyboardAvoidingAdditions.h": {
+                    "key": "UIScrollView+TPKeyboardAvoidingAdditions.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "UIScrollView+TPKeyboardAvoidingAdditions.h"
+                }, 
+                "UIView+AccessViewController.h": {
+                    "key": "UIView+AccessViewController.h", 
+                    "prefix": "Ribbit/MSCellAccessory/", 
+                    "suffix": "UIView+AccessViewController.h"
+                }, 
+                "VideoViewController.h": {
+                    "key": "VideoViewController.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "VideoViewController.h"
+                }, 
+                "VideoWriter.h": {
+                    "key": "VideoWriter.h", 
+                    "prefix": "Ribbit/", 
+                    "suffix": "VideoWriter.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "Pods/Headers", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Pods/Headers/AFNetworking", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./Ribbit/Ribbit-Info.plist"
+    ], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [
+        "z.1.1.3", 
+        "Pods"
+    ], 
+    "link_flags": [], 
+    "modules": [], 
+    "pchs": [
+        "./Ribbit/Ribbit-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/CameraViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/DejalActivityView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/EditFriendsViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/FriendsViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/GravatarUrlBuilder.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/ImageViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/InboxViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/LoginViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/MSCellAccessory/MSCellAccessory.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/MSCellAccessory/UIView+AccessViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/RecordingUIViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCFile.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCMessage.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SCUser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/SnapchatClient.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/TPKeyboardAvoidingScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/UIScrollView+TPKeyboardAvoidingAdditions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/VideoViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/VideoWriter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Ribbit/main.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "Ribbit.xcodeproj"
+}

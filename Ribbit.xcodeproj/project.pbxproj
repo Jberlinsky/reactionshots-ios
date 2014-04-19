@@ -48,6 +48,9 @@
 		CB123BA718A636F600F71F17 /* SCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA618A636F600F71F17 /* SCMessage.m */; };
 		CB123BAA18A6422800F71F17 /* SCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CB123BA918A6422800F71F17 /* SCFile.m */; };
 		CB97091C18A60D6600BC4A8B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB97091B18A60D6600BC4A8B /* Parse.framework */; };
+		CBE3CE3618A7DF17008E0A06 /* VideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CE3518A7DF17008E0A06 /* VideoWriter.m */; };
+		CBE3CE3918A7E040008E0A06 /* RecordingUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CE3818A7E040008E0A06 /* RecordingUIViewController.m */; };
+		CBE3CE3C18A7E1BE008E0A06 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CE3B18A7E1BE008E0A06 /* VideoViewController.m */; };
 		CBFA9FC718A6C7990095C7DB /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFA9FC618A6C7990095C7DB /* DejalActivityView.m */; };
 		CBFA9FC918A79ED70095C7DB /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFA9FC818A79ED70095C7DB /* Instabug.framework */; };
 		CBFA9FCB18A79F940095C7DB /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBFA9FCA18A79F940095C7DB /* Instabug.bundle */; };
@@ -128,6 +131,12 @@
 		CB123BA818A6422800F71F17 /* SCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFile.h; path = Ribbit/SCFile.h; sourceTree = "<group>"; };
 		CB123BA918A6422800F71F17 /* SCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFile.m; path = Ribbit/SCFile.m; sourceTree = "<group>"; };
 		CB97091B18A60D6600BC4A8B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CBE3CE3418A7DF17008E0A06 /* VideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoWriter.h; sourceTree = "<group>"; };
+		CBE3CE3518A7DF17008E0A06 /* VideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoWriter.m; sourceTree = "<group>"; };
+		CBE3CE3718A7E040008E0A06 /* RecordingUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingUIViewController.h; sourceTree = "<group>"; };
+		CBE3CE3818A7E040008E0A06 /* RecordingUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingUIViewController.m; sourceTree = "<group>"; };
+		CBE3CE3A18A7E1BE008E0A06 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		CBE3CE3B18A7E1BE008E0A06 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		CBFA9FC518A6C7990095C7DB /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
 		CBFA9FC618A6C7990095C7DB /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
 		CBFA9FC818A79ED70095C7DB /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
@@ -251,8 +260,14 @@
 				42C8D5741827C28D002B732B /* LoginViewController.m */,
 				421B46391826FD750082B789 /* InboxViewController.h */,
 				421B463A1826FD750082B789 /* InboxViewController.m */,
+				CBE3CE3A18A7E1BE008E0A06 /* VideoViewController.h */,
+				CBE3CE3B18A7E1BE008E0A06 /* VideoViewController.m */,
 				428B9F1018284D57003D19F0 /* ImageViewController.h */,
 				428B9F1118284D57003D19F0 /* ImageViewController.m */,
+				CBE3CE3718A7E040008E0A06 /* RecordingUIViewController.h */,
+				CBE3CE3818A7E040008E0A06 /* RecordingUIViewController.m */,
+				CBE3CE3418A7DF17008E0A06 /* VideoWriter.h */,
+				CBE3CE3518A7DF17008E0A06 /* VideoWriter.m */,
 				42E1254D182933C200319FD0 /* TPKeyboardAvoidingScrollView.h */,
 				42E1254E182933C200319FD0 /* TPKeyboardAvoidingScrollView.m */,
 				42E125501829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
@@ -472,11 +487,14 @@
 				428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */,
 				CB123BA718A636F600F71F17 /* SCMessage.m in Sources */,
 				CB123BA118A62DC100F71F17 /* SnapchatClient.m in Sources */,
+				CBE3CE3918A7E040008E0A06 /* RecordingUIViewController.m in Sources */,
 				421B46191826C8D50082B789 /* AppDelegate.m in Sources */,
 				42497B47182A9C1000A33513 /* MSCellAccessory.m in Sources */,
+				CBE3CE3C18A7E1BE008E0A06 /* VideoViewController.m in Sources */,
 				CB123BA418A636B300F71F17 /* SCUser.m in Sources */,
 				CB123BAA18A6422800F71F17 /* SCFile.m in Sources */,
 				428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */,
+				CBE3CE3618A7DF17008E0A06 /* VideoWriter.m in Sources */,
 				42E125521829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
 				428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */,

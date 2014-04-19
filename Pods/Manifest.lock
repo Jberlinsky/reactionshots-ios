@@ -17,11 +17,14 @@ PODS:
   - AFNetworking/Serialization (2.1.0)
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
+  - PBFlatUI (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - PBFlatUI (~> 1.1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  PBFlatUI: 17b80f917881dfd02cf4851af6888d258912261a
 
 COCOAPODS: 0.29.0

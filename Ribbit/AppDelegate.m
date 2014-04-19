@@ -21,7 +21,7 @@
     [SnapchatClient initialize];
     
     [Instabug KickOffWithToken:@"9a0578ef8484b904e4c600f748acb03b" CaptureSource:InstabugCaptureSourceUIKit FeedbackEvent:InstabugFeedbackEventShake IsTrackingLocation:YES];
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"7c85f2c3219086e1acbb2253b10533b6"];
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"fea3b764cf97a502eecbce48f6d4d8ac"];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
@@ -84,6 +84,16 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+}
+
+- (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    if ([[self.window.subviews.lastObject class].description isEqualToString:@"MPSwipableView"]) {
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    }
+    else {
+        return UIInterfaceOrientationMaskPortrait;
+    }
 }
 
 
